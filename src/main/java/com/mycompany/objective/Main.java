@@ -18,8 +18,9 @@ public class Main {
         // TODO code application logic here
         FizzBuzz myFizzBuzz = new FizzBuzz();
 
-        myFizzBuzz.addRule(5, "Buzz");
-        myFizzBuzz.addRule(3, "Fizz");
+        myFizzBuzz.addFizzRule(3);
+        myFizzBuzz.addBuzzRule(5);
+//        myFizzBuzz.addCustomRule(15, "Foo");
 
         var result = myFizzBuzz.generate(1, 100);
         
