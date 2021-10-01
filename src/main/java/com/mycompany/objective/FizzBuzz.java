@@ -27,8 +27,16 @@ public class FizzBuzz {
         this.rules = rules;
     }
 
-    public void addRule(int key, String str) {
+    public void addCustomRule(int key, String str) {
         rules.put(key, str);
+    }
+
+    public void addFizzRule(int key) {
+        rules.put(key, "Fizz");
+    }
+
+    public void addBuzzRule(int key) {
+        rules.put(key, "Buzz");
     }
 
     public void removeRule(int key) {
